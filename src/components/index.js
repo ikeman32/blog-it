@@ -1,11 +1,13 @@
 //Import your custom components here
 import Home from './home/Home';
 import About from './about/About'
+import Login from './login/login';
 
 //Then export them here
 export {
     Home,
-    About
+    About,
+    Login
 };
 
 /*

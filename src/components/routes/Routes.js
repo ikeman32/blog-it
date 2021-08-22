@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import {Home, About} from '../index';
+import {Home, About, Login} from '../index';
 
 /* 
 Put all of your routes here and they will be imported to App.js
@@ -12,6 +12,7 @@ const Routes = () =>{
         <>
         <Route exact path="/" component={Home} />
         <Route path='/About' component={About} />
+        <Route path='/Login' component={Login} />
         {/* <Route path='/<pathname here>' component={<component name here>}/> */}
         </>
     )
