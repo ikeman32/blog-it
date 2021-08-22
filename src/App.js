@@ -1,21 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Routes from './components/routes/Routes';//Import routes
-import './App.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import Routes from "./components/routes/Routes"; //Import routes
+import { Header } from "./components/index";
+import "./App.scss";
 
 function App() {
   return (
     <div>
-      <header>
-        <nav>
-          <Link to="/">
-            Home
-          </Link>
+      <Header>
+        <nav style={{margin: '0 auto'} }>
+          <Link to="/" style={{textDecoration: 'none'}}>Home</Link>
         </nav>
-      </header>
-      <>
-      <Routes />
-      </>
+      </Header>
+      <div>
+        <Routes />
+      </div>
     </div>
   );
 }

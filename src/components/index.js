@@ -2,12 +2,14 @@
 import Home from './home/Home';
 import About from './about/About'
 import Login from './login/login';
+import Header from './header/Header';
 
 //Then export them here
 export {
     Home,
     About,
-    Login
+    Login,
+    Header
 };
 
 /*

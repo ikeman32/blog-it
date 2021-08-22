@@ -10,9 +10,9 @@ Import all of your components from the index.js file in the root of components f
 const Routes = () =>{
     return(
         <>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Login} />
         <Route path='/About' component={About} />
-        <Route path='/Login' component={Login} />
+        <Route path='/Home' component={Home} />
         {/* <Route path='/<pathname here>' component={<component name here>}/> */}
         </>
     )

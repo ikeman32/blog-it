@@ -1,8 +1,11 @@
-
+import React from "react"
+import LoginCard from "./logincard"
 
 const Login = ()=>{
     return(
-        <div>Login</div>
+        <LoginCard>
+            <p>login</p>
+        </LoginCard>
     )
 }
 
