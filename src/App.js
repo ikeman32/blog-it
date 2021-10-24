@@ -5,9 +5,23 @@ import { Header } from "./components/index";
 import "./App.scss";
 
 function App() {
+  //Required for Header
+  const sections = [
+    { title: 'Technology', url: '#' },
+    { title: 'Design', url: '#' },
+    { title: 'Culture', url: '#' },
+    { title: 'Business', url: '#' },
+    { title: 'Politics', url: '#' },
+    { title: 'Opinion', url: '#' },
+    { title: 'Science', url: '#' },
+    { title: 'Health', url: '#' },
+    { title: 'Style', url: '#' },
+    { title: 'Travel', url: '#' },
+  ];
   return (
     <div>
-      <Header />
+      {/* title and sections required */}
+      <Header title="Blog" sections={sections}/>
       <div>
         
       </div>
