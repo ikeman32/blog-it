@@ -16,7 +16,7 @@ function Header(props) {
     <React.Fragment>
       {/* Header */}
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider', backgroundColor: 'green' }}>
-        <Button size="small">Subscribe</Button>
+        <Button size="small" href='#' >Subscribe</Button>
         <Typography
           component="h2"
           variant="h5"
@@ -30,7 +30,7 @@ function Header(props) {
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant="outlined" size="small">
+        <Button variant="outlined" size="small" href='Signup' >
           Sign up
         </Button>
       </Toolbar>
@@ -39,18 +39,20 @@ function Header(props) {
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'space-between', overflowX: 'auto', backgroundColor: 'blue' }}
+        sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
       >
         {sections.map((section) => (
           <Link
             color="inherit"
             noWrap
+            underline='none'
             key={section.title}
             variant="body2"
             href={section.url}
             sx={{ p: 1, flexShrink: 0 }}
           >
             {section.title}
+            
           </Link>
         ))}
       </Toolbar>
