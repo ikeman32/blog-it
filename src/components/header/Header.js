@@ -11,9 +11,11 @@ import Link from '@mui/material/Link';
 function Header(props) {
   const { sections, title } = props;
 
+  // TODO: Make attributes of the header configurable
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      {/* Header */}
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider', backgroundColor: 'green' }}>
         <Button size="small">Subscribe</Button>
         <Typography
           component="h2"
@@ -32,10 +34,12 @@ function Header(props) {
           Sign up
         </Button>
       </Toolbar>
+      {/* Navigation */}
+    {/* TODO: Make attributes of the navigation configurable */}
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
+        sx={{ justifyContent: 'space-between', overflowX: 'auto', backgroundColor: 'blue' }}
       >
         {sections.map((section) => (
           <Link

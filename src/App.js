@@ -6,6 +6,7 @@ import "./App.scss";
 
 function App() {
   //Required for Header
+  // TODO: Make this dynamic
   const sections = [
     { title: 'Technology', url: '#' },
     { title: 'Design', url: '#' },
@@ -21,6 +22,7 @@ function App() {
   return (
     <div>
       {/* title and sections required */}
+      {/* TODO: Make this dynamic */}
       <Header title="Blog" sections={sections}/>
       <div>
         
