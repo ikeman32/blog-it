@@ -3,13 +3,17 @@ import Home from './home/Home';
 import About from './about/About'
 import Login from './login/login';
 import Header from './header/Header';
+import SignUp from './signup/signup';
+import StickyFooter from './footer/stickefooter';
 
 //Then export them here
 export {
     Home,
     About,
     Login,
-    Header
+    Header,
+    SignUp,
+    StickyFooter
 };
 
 /*
