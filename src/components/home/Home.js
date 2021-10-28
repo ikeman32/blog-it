@@ -1,12 +1,14 @@
-import React from 'react';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 const Home = () => {
   /*Put all of your hooks, functions, etc here */
 
   return (
-    <div>
-      <h1>This is the Home page!</h1>
-    </div>
+    <Box sx={{ width: '100%', maxWidth: 500 }} >
+      <Typography variant="h1">Home</Typography>
+    </Box>
   );
 };
 
