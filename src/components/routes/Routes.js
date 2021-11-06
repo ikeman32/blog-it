@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom';
-import {Home, About, Login, SignUp, StickyFooter} from '../index';
+import {Home, About, Login, SignUp, StickyFooter, Editor} from '../index';
 
 /* 
 Put all of your routes here and they will be imported to App.js
@@ -15,6 +15,7 @@ const Routes = () =>{
         <Route path='/SignUp' component={SignUp} />
         <Route path='/Login' component={Login} />
         <Route path='/StickyFooter' component={StickyFooter} />
+        <Route path='/Editor' component={Editor} />
         {/* <Route path='/<pathname here>' component={<component name here>}/> */}
         </>
     )
