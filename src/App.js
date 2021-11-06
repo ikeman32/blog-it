@@ -8,7 +8,7 @@ function App() {
   // TODO: Make this dynamic
   const sections = [
     { title: 'Home', url: '/' },
-    { title: 'Design', url: '#' },
+    { title: 'Design', url: '/Editor' },
     { title: 'Culture', url: '#' },
     { title: 'Business', url: '#' },
     { title: 'Politics', url: '#' },
