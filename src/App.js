@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import Routes from "./components/routes/Routes"; //Import routes
 import { Header, StickyFooter } from "./components/index";
 import "./App.scss";
