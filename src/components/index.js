@@ -5,6 +5,7 @@ import Login from './login/login';
 import Header from './header/Header';
 import SignUp from './signup/signup';
 import StickyFooter from './footer/stickefooter';
+import Editor from './adminpages/Editor';
 
 //Then export them here
 export {
@@ -13,7 +14,8 @@ export {
     Login,
     Header,
     SignUp,
-    StickyFooter
+    StickyFooter,
+    Editor
 };
 
 /*
