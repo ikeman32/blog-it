@@ -1,12 +1,16 @@
-import * as React from 'react';
+import * as React from "react";
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 
 const About = () => {
   /*Put all of your hooks, functions, etc here */
 
   return (
-    <div>
-      <h1>This is the About page!</h1>
-    </div>
+    <Container >
+      <Typography variant="h1">
+        About
+      </Typography>
+    </Container>
   );
 };
 

@@ -1,14 +1,16 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
+import * as React from "react";
 import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 
 const Home = () => {
   /*Put all of your hooks, functions, etc here */
 
   return (
-    <Box sx={{ width: '100%', maxWidth: 500 }} >
-      <Typography variant="h1">Home</Typography>
-    </Box>
+    <Container >
+      <Typography variant="h1">
+        Home
+      </Typography>
+    </Container>
   );
 };
 

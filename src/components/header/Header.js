@@ -1,5 +1,4 @@
-
-import * as React from 'react';
+import * as React from "react";
 import PropTypes from 'prop-types';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
@@ -30,7 +29,7 @@ function Header(props) {
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant="outlined" size="small" href='Signup' >
+        <Button variant="outlined" size="small" href='/SignUp' >
           Sign up
         </Button>
       </Toolbar>

@@ -3,6 +3,7 @@ import Home from './home/Home';
 import About from './about/About'
 import Login from './login/login';
 import Header from './header/Header';
+import { sections, title } from './header/HeaderProps';
 import SignUp from './signup/signup';
 import StickyFooter from './footer/stickefooter';
 import Editor from './adminpages/Editor';
@@ -16,7 +17,9 @@ export {
     Header,
     SignUp,
     StickyFooter,
-    Editor
+    Editor,
+    sections,
+    title
 };
 
 /*
