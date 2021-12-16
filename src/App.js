@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Routes from "./components/routes/Routes"; //Import routes
+import MyRoutes from "./components/routes/Routes"; //Import routes
 import { Header, StickyFooter } from "./components/index";
 import "./App.scss";
 
@@ -24,7 +24,7 @@ function App() {
       {/* TODO: Make this dynamic */}
       <Header title="Blog-It" sections={sections}/>
       <div>
-        <Routes />
+        <MyRoutes />
       </div>
       <StickyFooter />
     </div>
