@@ -1,21 +1,23 @@
 import * as React from "react";
 import MyRoutes from "./components/routes/Routes"; //Import routes
 import { Header, StickyFooter, sections, title } from "./components/index";
+import Box from '@mui/material/Box';
+
 import "./App.scss";
 
 function App() {
   //Required for Header
   
   return (
-    <div className='app' >
+    <Box className='app' >
       
       {/* title and sections required */}      
       <Header title={title} sections={sections}/>
-      <div className='app-content'>
+      <Box className='app-content'>
         <MyRoutes />
-      </div>
+      </Box>
       <StickyFooter />
-    </div>
+    </Box>
   );
 }
 
