@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home, About, Login, SignUp, Editor } from "../index";
+import {Login, SignUp} from "../components/index";
+import { Home, About, Editor } from "../pages/index";
 
 /* 
 Put all of your routes here and they will be imported to App.js
