@@ -7,6 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
+import { defaultTheme } from "..";
 
 function Header(props) {
   const { sections, title } = props;
@@ -19,11 +20,17 @@ function Header(props) {
         sx={{
           borderBottom: 1,
           borderColor: "divider",
-          backgroundColor: "#6b7fd7",
+          backgroundColor: defaultTheme.header.background,
         }}
       >
         {/* Subscribe Button */}
-        <Button size="small" href="#" sx={{color: "red"}} >
+        <Button
+          size="small"
+          href="#"
+          sx={{
+            color: defaultTheme.header.textColor,
+          }}
+        >
           Subscribe
         </Button>
         {/* Title */}
@@ -33,26 +40,37 @@ function Header(props) {
           color="inherit"
           align="center"
           noWrap
-          sx={{ flex: 1, color: "red" }}
+          sx={{ flex: 1, color: defaultTheme.header.textColor }}
         >
           {title}
         </Typography>
         {/* Search Button */}
         <IconButton>
-          <SearchIcon sx={{color: "red"}} />
+          <SearchIcon sx={{ color: defaultTheme.header.textColor }} />
         </IconButton>
         {/* Sign up Button */}
-        <Button variant="outlined" size="small" href="/SignUp" sx={{color: "red"}} >
+        <Button
+          variant="outlined"
+          size="small"
+          href="/SignUp"
+          sx={{
+            color: defaultTheme.header.textColor,
+            borderColor: defaultTheme.header.borderColor,
+          }}
+        >
           Sign up
         </Button>
       </Toolbar>
       {/* Navigation */}
       {/* TODO: Make attributes of the navigation configurable */}
-      <Container maxWidth="lg" sx={{ mt: 1 }}>
+      <Container maxWidth="lg" sx={{ mt: 1, backgroundColor: defaultTheme.nav.background }}>
         <Toolbar
           component="nav"
           variant="dense"
-          sx={{ justifyContent: "space-between", overflowX: "auto" }}
+          sx={{ 
+            justifyContent: "space-between", 
+            overflowX: "auto", 
+          }}
         >
           {sections.map((section) => (
             <Link
@@ -62,7 +80,11 @@ function Header(props) {
               key={section.title}
               variant="body2"
               href={section.url}
-              sx={{ p: 1, flexShrink: 0, color: "red" }}
+              sx={{ 
+                p: 1, 
+                flexShrink: 0, 
+                color: defaultTheme.nav.textColor,
+              }}
             >
               {section.title}
             </Link>

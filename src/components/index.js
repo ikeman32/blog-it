@@ -5,6 +5,7 @@ import Header from './header/Header';
 import { sections, title } from './header/HeaderProps';
 import SignUp from './signup/signup';
 import StickyFooter from './footer/stickefooter';
+import { defaultTheme, website } from './themes/themes';
 
 
 //Then export them here
@@ -14,7 +15,9 @@ export {
     SignUp,
     StickyFooter,
     sections,
-    title
+    title,
+    defaultTheme,
+    website
 };
 
 /*
