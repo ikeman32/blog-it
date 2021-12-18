@@ -8,7 +8,6 @@ import {
   defaultTheme,
 } from "./components/index";
 import Box from "@mui/material/Box";
-import { Container } from "@mui/material";
 
 function App() {
   //Required for Header

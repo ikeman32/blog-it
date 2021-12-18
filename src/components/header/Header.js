@@ -26,7 +26,7 @@ function Header(props) {
         {/* Subscribe Button */}
         <Button
           size="small"
-          href="#"
+          href="/SignUp"
           sx={{
             color: defaultTheme.header.textColor,
           }}
@@ -52,13 +52,13 @@ function Header(props) {
         <Button
           variant="outlined"
           size="small"
-          href="/SignUp"
+          href="/Login"
           sx={{
             color: defaultTheme.header.textColor,
             borderColor: defaultTheme.header.borderColor,
           }}
         >
-          Sign up
+          Login
         </Button>
       </Toolbar>
       {/* Navigation */}
@@ -68,7 +68,7 @@ function Header(props) {
           component="nav"
           variant="dense"
           sx={{ 
-            justifyContent: "space-between", 
+            justifyContent: "space-around", 
             overflowX: "auto", 
           }}
         >
