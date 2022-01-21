@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
-import {Login, SignUp} from "../components/index";
+import { Login, SignUp } from "../components/index";
 import { Home, About, Editor } from "../pages/index";
 
 /* 
@@ -10,13 +10,16 @@ Import all of your components from the index.js file in the root of components f
 
 const MyRoutes = () => {
   return (
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Editor" element={<Editor />} />
-      </Routes>
+    <Routes>
+      {/* This is a public route */}
+      <Route path="/About" element={<About />} />
+      <Route path="/SignUp" element={<SignUp />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/" element={<Home />} />
+      {/* This is a protected route */}
+      <Route path="/Editor" element={<Editor />} />
+      {/* This is a redirect route */}
+    </Routes>
   );
 };
 
