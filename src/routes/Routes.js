@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Login, SignUp } from "../components/index";
+import { Login, SignUp, ProtectedRoutes } from "../components/index";
 import { Home, About, Editor } from "../pages/index";
 
 /* 
@@ -17,8 +17,11 @@ const MyRoutes = () => {
       <Route path="/Login" element={<Login />} />
       <Route path="/" element={<Home />} />
       {/* This is a protected route */}
-      <Route path="/Editor" element={<Editor />} />
+      <Route element={<ProtectedRoutes />}>
+        <Route path="/Editor" element={<Editor />} />
+      </Route>
       {/* This is a redirect route */}
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 };
