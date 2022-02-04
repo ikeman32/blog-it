@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Login, SignUp, ProtectedRoutes } from "../components/index";
-import { Home, About, Editor } from "../pages/index";
+import { Login, SignUp } from "../components/index";
+import { Home, About, Edit } from "../pages/index";
 
 /* 
 Put all of your routes here and they will be imported to App.js
@@ -16,10 +16,11 @@ const MyRoutes = () => {
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/Login" element={<Login />} />
       <Route path="/" element={<Home />} />
+      <Route path="/Edit" element={<Edit />} />
       {/* This is a protected route */}
-      <Route element={<ProtectedRoutes />}>
+      {/* <Route element={<ProtectedRoutes />}>
         <Route path="/Editor" element={<Editor />} />
-      </Route>
+      </Route> */}
       {/* This is a redirect route */}
       <Route path="*" element={<Home />} />
     </Routes>

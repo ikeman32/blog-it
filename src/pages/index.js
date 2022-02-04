@@ -1,13 +1,13 @@
 //Import your custom components here
 import Home from "./home/Home";
 import About from "./about/About";
-import Editor from "./adminpages/Editor";
+import Edit from "./adminpages/Editor";
 
 //Then export them here
 export {
    Home,
    About,
-   Editor,
+   Edit,
 };
 
 /*
