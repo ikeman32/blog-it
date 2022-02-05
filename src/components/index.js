@@ -6,7 +6,6 @@ import { sections, title } from './header/HeaderProps';
 import SignUp from './signup/signup';
 import StickyFooter from './footer/stickefooter';
 import { defaultTheme, website } from './themes/themes';
-import ProtectedRoutes from './protected/ProtectedRoutes';
 
 
 //Then export them here
@@ -15,7 +14,6 @@ export {
     Header,
     SignUp,
     StickyFooter,
-    ProtectedRoutes,
     sections,
     title,
     defaultTheme,

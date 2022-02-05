@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { Login, SignUp } from "../components/index";
-import { Home, About, Edit } from "../pages/index";
+import { Home, About, Edit, Administrator } from "../pages/index";
 
 /* 
 Put all of your routes here and they will be imported to App.js
@@ -16,15 +16,32 @@ const MyRoutes = () => {
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/Login" element={<Login />} />
       <Route path="/" element={<Home />} />
-      <Route path="/Edit" element={<Edit />} />
       {/* This is a protected route */}
-      {/* <Route element={<ProtectedRoutes />}>
-        <Route path="/Editor" element={<Editor />} />
-      </Route> */}
+      <Route 
+        path="/Administrator" 
+        element={
+        <ProtectedRoutes redirectTo="/Login">
+          <Administrator />
+        </ProtectedRoutes>
+        }
+      />
+      <Route 
+        path="/Edit" 
+        element={
+        <ProtectedRoutes redirectTo="/Login">
+          <Edit />
+        </ProtectedRoutes>
+        }
+      />
       {/* This is a redirect route */}
       <Route path="*" element={<Home />} />
     </Routes>
   );
 };
+
+function ProtectedRoutes({ children, redirectTo }) {
+  let isAuthenticated = false; // getAuth();
+  return isAuthenticated ? children : <Navigate to={redirectTo} />;
+}
 
 export default MyRoutes;
